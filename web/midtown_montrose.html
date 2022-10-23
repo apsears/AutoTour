@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+    .selected {
+        background-color: #6ccbfb;
+        color: #555;
+    }
+    .center {
+        margin: auto;
+        width: 40%;
+        border: 5px solid #ff2200;
+        padding: 10px;
+    }
+
+
+        </style>
+    </head>
+<script>
+function toggleClass(el, className) {
+    if (el.className.indexOf(className) >= 0) {
+        el.className = el.className.replace(className,"");
+    }
+    else {
+        el.className  += className;
+    }
+}
+</script>
+<body>
+<div class="imgbox">
+<img src="images/mega_4.jpg" class="center-fit"></img>
+</div>
+
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+<tr>
+  <th>#</th>
+  <th>Station</th>
+  <th>Neighborhood</th>
+  <th>Apple</th>
+  <th>-------</th>
+  <th>Google</th>
+  <th></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>1</th>
+  <th>Peggy Park</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.73223,-95.3754">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.73223,-95.3754">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>2</th>
+  <th>Baldwin Park</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.73869,-95.3701">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.73869,-95.3701">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>3</th>
+  <th>Austin & Gray</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.74651,-95.36803">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.74651,-95.36803">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>4</th>
+  <th>Milam & Webster</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.74876,-95.37412">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.74876,-95.37412">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>5</th>
+  <th>2222 Smith</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.7496,-95.37633">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7496,-95.37633">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>6</th>
+  <th>West Gray & Baldwin</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.7524,-95.37765">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7524,-95.37765">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>7</th>
+  <th>Eleanor Tinsley Park</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.7614,-95.38063">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7614,-95.38063">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>8</th>
+  <th>Fonde Recreation Center</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.76336111,-95.37546667">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76336111,-95.37546667">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>9</th>
+  <th>Sabine Bridge</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.76184,-95.37548">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76184,-95.37548">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>10</th>
+  <th>Spotts Park</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.76612,-95.39681">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76612,-95.39681">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>11</th>
+  <th>Lost Lake</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.75921,-95.40201">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.75921,-95.40201">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>12</th>
+  <th>Regent Square</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.75592,-95.402471">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.75592,-95.402471">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>13</th>
+  <th>Dunlavy & Westheimer</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.7428,-95.4023">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7428,-95.4023">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>14</th>
+  <th>Menil Collection/Alabama & Mulberry</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.73864,-95.39767">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.73864,-95.39767">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>15</th>
+  <th>Freed Library</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.73554,-95.39124">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.73554,-95.39124">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>16</th>
+  <th>Westheimer & Waugh</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.74483,-95.39273">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.74483,-95.39273">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>17</th>
+  <th>Taft & Fairview</th>
+  <th>Montrose</th>
+  <th><a href="http://maps.apple.com/?q=29.74837,-95.38563">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.74837,-95.38563">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>18</th>
+  <th>Brazos & McGowen</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.74783,-95.37837">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.74783,-95.37837">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>19</th>
+  <th>Midtown Park</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.74391,-95.37554">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.74391,-95.37554">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>20</th>
+  <th>Elgin & Smith</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.74366,-95.38025">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.74366,-95.38025">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>21</th>
+  <th>Ensemble/HCC METRORail</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.73959,-95.37849">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.73959,-95.37849">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>22</th>
+  <th>The Ion</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.73466,-95.38196">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.73466,-95.38196">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>23</th>
+  <th>HCC Central</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.73816,-95.37711">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.73816,-95.37711">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>24</th>
+  <th>La Branch & Alabama</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.735107,-95.375796">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.735107,-95.375796">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>25</th>
+  <th>2222 Smith</th>
+  <th>Midtown</th>
+  <th><a href="http://maps.apple.com/?q=29.7496,-95.37633">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7496,-95.37633">Google</a></th>
+</tr>
+
+             
+</table>
+</div>
+</body>
+</html>

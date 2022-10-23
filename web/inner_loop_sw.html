@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+    .selected {
+        background-color: #6ccbfb;
+        color: #555;
+    }
+    .center {
+        margin: auto;
+        width: 40%;
+        border: 5px solid #ff2200;
+        padding: 10px;
+    }
+
+
+        </style>
+    </head>
+<script>
+function toggleClass(el, className) {
+    if (el.className.indexOf(className) >= 0) {
+        el.className = el.className.replace(className,"");
+    }
+    else {
+        el.className  += className;
+    }
+}
+</script>
+<body>
+<div class="imgbox">
+<img src="images/sparse_1.jpg" class="center-fit"></img>
+</div>
+
+<div class="center">Note: Levy park is kind of an outlier -- perhaps it should be conquered separately, ie with Rice/TMC</div>
+
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+<tr>
+  <th>#</th>
+  <th>Station</th>
+  <th>Neighborhood</th>
+  <th>Apple</th>
+  <th>-------</th>
+  <th>Google</th>
+  <th></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>1</th>
+  <th>Meyerland JCC</th>
+  <th>Inner Loop SW</th>
+  <th><a href="http://maps.apple.com/?q=29.67526494,-95.48302763">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.67526494,-95.48302763">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>2</th>
+  <th>NRG - Kirby</th>
+  <th>Inner Loop SW</th>
+  <th><a href="http://maps.apple.com/?q=29.68495,-95.41259">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.68495,-95.41259">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>3</th>
+  <th>NRG - Fannin</th>
+  <th>Inner Loop SW</th>
+  <th><a href="http://maps.apple.com/?q=29.68647,-95.40392">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.68647,-95.40392">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>4</th>
+  <th>N. Braeswood & Kirby METRO Bus</th>
+  <th>Inner Loop SW</th>
+  <th><a href="http://maps.apple.com/?q=29.697916,-95.4185507">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.697916,-95.4185507">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>5</th>
+  <th>Levy Park</th>
+  <th>Inner Loop SW</th>
+  <th><a href="http://maps.apple.com/?q=29.7331667,-95.4243611">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7331667,-95.4243611">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>6</th>
+  <th>S. Braeswood & Linkmeadow METRO Bus</th>
+  <th>Inner Loop SW</th>
+  <th><a href="http://maps.apple.com/?q=29.6911667,-95.43525">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.6911667,-95.43525">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>7</th>
+  <th>N. Braeswood & Kirby METRO Bus</th>
+  <th>Inner Loop SW</th>
+  <th><a href="http://maps.apple.com/?q=29.697916,-95.4185507">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.697916,-95.4185507">Google</a></th>
+</tr>
+
+             
+</table>
+</div>
+</body>
+</html>

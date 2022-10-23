@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+    .selected {
+        background-color: #6ccbfb;
+        color: #555;
+    }
+    .center {
+        margin: auto;
+        width: 40%;
+        border: 5px solid #ff2200;
+        padding: 10px;
+    }
+
+
+        </style>
+    </head>
+<script>
+function toggleClass(el, className) {
+    if (el.className.indexOf(className) >= 0) {
+        el.className = el.className.replace(className,"");
+    }
+    else {
+        el.className  += className;
+    }
+}
+</script>
+<body>
+<div class="imgbox">
+<img src="images/mega_1.jpg" class="center-fit"></img>
+</div>
+
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+<tr>
+  <th>#</th>
+  <th>Station</th>
+  <th>Neighborhood</th>
+  <th>Apple</th>
+  <th>-------</th>
+  <th>Google</th>
+  <th></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>1</th>
+  <th>UTHSC Housing & Rec Center</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.69151,-95.39655">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.69151,-95.39655">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>2</th>
+  <th>UT Research Park</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.69384,-95.39421">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.69384,-95.39421">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>3</th>
+  <th>TMC Innovation</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.70377,-95.3822">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.70377,-95.3822">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>4</th>
+  <th>Ben Taub Hospital</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.71147,-95.39331">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.71147,-95.39331">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>5</th>
+  <th>Memorial Hermann Hospital Houston Zoo METRORail</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.71391,-95.39733">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.71391,-95.39733">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>6</th>
+  <th>UTMDA Main Campus MDA Blvd</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.70758,-95.39566">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.70758,-95.39566">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>7</th>
+  <th>TMC Garage 2</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.70725,-95.39929">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.70725,-95.39929">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>8</th>
+  <th>TMC Pressler & Bertner</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.70447,-95.39884">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.70447,-95.39884">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>9</th>
+  <th>TMC Transit Center</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.70362,-95.40352">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.70362,-95.40352">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>10</th>
+  <th>TMC Garage 8</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.70604,-95.40801">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.70604,-95.40801">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>11</th>
+  <th>Rice Village Apartments</th>
+  <th>Rice University</th>
+  <th><a href="http://maps.apple.com/?q=29.71434,-95.41499">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.71434,-95.41499">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>12</th>
+  <th>Dunstan & Kelvin</th>
+  <th>Rice University</th>
+  <th><a href="http://maps.apple.com/?q=29.7191,-95.41671">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7191,-95.41671">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>13</th>
+  <th>Amherst & Kelvin</th>
+  <th>Rice University</th>
+  <th><a href="http://maps.apple.com/?q=29.71569975,-95.41674512">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.71569975,-95.41674512">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>14</th>
+  <th>Rice U. Greenbriar Lot</th>
+  <th>Rice University</th>
+  <th><a href="http://maps.apple.com/?q=29.7157,-95.4126">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7157,-95.4126">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>15</th>
+  <th>Rice U. West Lot</th>
+  <th>Rice University</th>
+  <th><a href="http://maps.apple.com/?q=29.715,-95.4062">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.715,-95.4062">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>16</th>
+  <th>Rice U. South Servery</th>
+  <th>Rice University</th>
+  <th><a href="http://maps.apple.com/?q=29.71537,-95.40145">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.71537,-95.40145">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>17</th>
+  <th>Rice U. Gibbs Rec & Wellness</th>
+  <th>Rice University</th>
+  <th><a href="http://maps.apple.com/?q=29.71861,-95.40384">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.71861,-95.40384">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>18</th>
+  <th>Rice U. Duncan Hall</th>
+  <th>Rice University</th>
+  <th><a href="http://maps.apple.com/?q=29.72059,-95.39869">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.72059,-95.39869">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>19</th>
+  <th>Rice U. Cambridge Office Bldg</th>
+  <th>Rice University</th>
+  <th><a href="http://maps.apple.com/?q=29.7166,-95.3975">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7166,-95.3975">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>20</th>
+  <th>BioScience Research Collaborative</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.71083,-95.40156">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.71083,-95.40156">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>21</th>
+  <th>TMC Dryden METROrail</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.70984,-95.40064">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.70984,-95.40064">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>22</th>
+  <th>TMC Commons</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.70932,-95.39856">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.70932,-95.39856">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>23</th>
+  <th>UTMDA 1MC Bertner & Braeswood</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.70027,-95.39869">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.70027,-95.39869">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>24</th>
+  <th>TMC Smith Lands METRORail Parking Lot</th>
+  <th>TMC</th>
+  <th><a href="http://maps.apple.com/?q=29.69684,-95.40512">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.69684,-95.40512">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>25</th>
+  <th>Rice U. Cambridge Office Bldg</th>
+  <th>Rice University</th>
+  <th><a href="http://maps.apple.com/?q=29.7166,-95.3975">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7166,-95.3975">Google</a></th>
+</tr>
+
+             
+</table>
+</div>
+</body>
+</html>

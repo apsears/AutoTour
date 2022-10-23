@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+    .selected {
+        background-color: #6ccbfb;
+        color: #555;
+    }
+    .center {
+        margin: auto;
+        width: 40%;
+        border: 5px solid #ff2200;
+        padding: 10px;
+    }
+
+
+        </style>
+    </head>
+<script>
+function toggleClass(el, className) {
+    if (el.className.indexOf(className) >= 0) {
+        el.className = el.className.replace(className,"");
+    }
+    else {
+        el.className  += className;
+    }
+}
+</script>
+<body>
+<div class="imgbox">
+<img src="images/sparse_4.jpg" class="center-fit"></img>
+</div>
+
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+<tr>
+  <th>#</th>
+  <th>Station</th>
+  <th>Neighborhood</th>
+  <th>Apple</th>
+  <th>-------</th>
+  <th>Google</th>
+  <th></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>1</th>
+  <th>The Parker @ Memorial</th>
+  <th>Washington Corridor</th>
+  <th><a href="http://maps.apple.com/?q=29.76283,-95.42001">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76283,-95.42001">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>2</th>
+  <th>Jackson Hill & Memorial Dr</th>
+  <th>Washington Corridor</th>
+  <th><a href="http://maps.apple.com/?q=29.76337,-95.4017">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76337,-95.4017">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>3</th>
+  <th>Washington & Mentor </th>
+  <th>Washington Corridor</th>
+  <th><a href="http://maps.apple.com/?q=29.766608,-95.368168">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.766608,-95.368168">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>4</th>
+  <th>South Yard Washington@ Silver</th>
+  <th>Washington Corridor</th>
+  <th><a href="http://maps.apple.com/?q=29.768427,-95.377182">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.768427,-95.377182">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>5</th>
+  <th>The Silos @ Sawyer Yards</th>
+  <th>Washington Corridor</th>
+  <th><a href="http://maps.apple.com/?q=29.7715322,-95.3826666">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7715322,-95.3826666">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>6</th>
+  <th>24ELEVEN WASHINGTON</th>
+  <th>Washington Corridor</th>
+  <th><a href="http://maps.apple.com/?q=29.7681,-95.3832">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7681,-95.3832">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>7</th>
+  <th>Pearl Washington</th>
+  <th>Washington Corridor</th>
+  <th><a href="http://maps.apple.com/?q=29.77078,-95.41696">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.77078,-95.41696">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>8</th>
+  <th>24ELEVEN WASHINGTON</th>
+  <th>Washington Corridor</th>
+  <th><a href="http://maps.apple.com/?q=29.7681,-95.3832">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7681,-95.3832">Google</a></th>
+</tr>
+
+             
+</table>
+</div>
+</body>
+</html>

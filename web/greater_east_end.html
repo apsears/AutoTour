@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+    .selected {
+        background-color: #6ccbfb;
+        color: #555;
+    }
+    .center {
+        margin: auto;
+        width: 40%;
+        border: 5px solid #ff2200;
+        padding: 10px;
+    }
+
+
+        </style>
+    </head>
+<script>
+function toggleClass(el, className) {
+    if (el.className.indexOf(className) >= 0) {
+        el.className = el.className.replace(className,"");
+    }
+    else {
+        el.className  += className;
+    }
+}
+</script>
+<body>
+<div class="imgbox">
+<img src="images/sparse_0.jpg" class="center-fit"></img>
+</div>
+
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+<tr>
+  <th>#</th>
+  <th>Station</th>
+  <th>Neighborhood</th>
+  <th>Apple</th>
+  <th>-------</th>
+  <th>Google</th>
+  <th></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>1</th>
+  <th>Mason Park</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.724478,-95.294097">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.724478,-95.294097">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>2</th>
+  <th>Telephone & Eddington</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.735086,-95.331002">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.735086,-95.331002">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>3</th>
+  <th>Gateway on Cullen</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.7341,-95.34114">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7341,-95.34114">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>4</th>
+  <th>Harrisburg & Sampson</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.748526,-95.34145">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.748526,-95.34145">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>5</th>
+  <th>Guadalupe Park Plaza</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.75967,-95.34531">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.75967,-95.34531">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>6</th>
+  <th>1919 Runnels</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.76073,-95.348">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76073,-95.348">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>7</th>
+  <th>Nagivation Esplanade</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.75793,-95.34371">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.75793,-95.34371">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>8</th>
+  <th>Eastwood Park</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.74252,-95.32492">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.74252,-95.32492">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>9</th>
+  <th>Houston BCycle Headquarters</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.74793,-95.31656">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.74793,-95.31656">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>10</th>
+  <th>Magnolia Transit Center</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.73548421,-95.30266147">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.73548421,-95.30266147">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>11</th>
+  <th>1919 Runnels</th>
+  <th>Greater East End</th>
+  <th><a href="http://maps.apple.com/?q=29.76073,-95.348">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76073,-95.348">Google</a></th>
+</tr>
+
+             
+</table>
+</div>
+</body>
+</html>

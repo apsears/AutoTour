@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+    .selected {
+        background-color: #6ccbfb;
+        color: #555;
+    }
+    .center {
+        margin: auto;
+        width: 40%;
+        border: 5px solid #ff2200;
+        padding: 10px;
+    }
+
+
+        </style>
+    </head>
+<script>
+function toggleClass(el, className) {
+    if (el.className.indexOf(className) >= 0) {
+        el.className = el.className.replace(className,"");
+    }
+    else {
+        el.className  += className;
+    }
+}
+</script>
+<body>
+<div class="imgbox">
+<img src="images/mega_0.jpg" class="center-fit"></img>
+</div>
+
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+<tr>
+  <th>#</th>
+  <th>Station</th>
+  <th>Neighborhood</th>
+  <th>Apple</th>
+  <th>-------</th>
+  <th>Google</th>
+  <th></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>1</th>
+  <th>UHD Main & Franklin</th>
+  <th>UHD</th>
+  <th><a href="http://maps.apple.com/?q=29.76318,-95.35996">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76318,-95.35996">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>2</th>
+  <th>UHD Shea St Building/Lot B</th>
+  <th>UHD</th>
+  <th><a href="http://maps.apple.com/?q=29.76987,-95.35802">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76987,-95.35802">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>3</th>
+  <th>UHD Daly Parking Lot</th>
+  <th>UHD</th>
+  <th><a href="http://maps.apple.com/?q=29.7702,-95.3595">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7702,-95.3595">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>4</th>
+  <th>Burnett Transit Center</th>
+  <th>Near Northside</th>
+  <th><a href="http://maps.apple.com/?q=29.77201,-95.35917">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.77201,-95.35917">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>5</th>
+  <th>The Exchange @ Hardy Yards</th>
+  <th>Near Northside</th>
+  <th><a href="http://maps.apple.com/?q=29.77284214,-95.35550729">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.77284214,-95.35550729">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>6</th>
+  <th>Saint Arnold Brewing Company</th>
+  <th>Near Northside</th>
+  <th><a href="http://maps.apple.com/?q=29.77155,-95.34773">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.77155,-95.34773">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>7</th>
+  <th>Deluxe Theatre</th>
+  <th>Fifth Ward</th>
+  <th><a href="http://maps.apple.com/?q=29.77603922,-95.33680994">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.77603922,-95.33680994">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>8</th>
+  <th>Legacy Community Health Lyons Clinic</th>
+  <th>Fifth Ward</th>
+  <th><a href="http://maps.apple.com/?q=29.77605,-95.33176">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.77605,-95.33176">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>9</th>
+  <th>Fifth Ward CRC Lyons & Waco</th>
+  <th>Fifth Ward</th>
+  <th><a href="http://maps.apple.com/?q=29.776009,-95.326715">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.776009,-95.326715">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>10</th>
+  <th>Finnigan Park</th>
+  <th>Fifth Ward</th>
+  <th><a href="http://maps.apple.com/?q=29.7702,-95.320165">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.7702,-95.320165">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>11</th>
+  <th>5th Ward/ Denver Harbor Transit Center</th>
+  <th>Fifth Ward</th>
+  <th><a href="http://maps.apple.com/?q=29.77600071,-95.31537647">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.77600071,-95.31537647">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>12</th>
+  <th>Boyce Dorian Park</th>
+  <th>Fifth Ward</th>
+  <th><a href="http://maps.apple.com/?q=29.77953,-95.32026">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.77953,-95.32026">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>13</th>
+  <th>Mickey Leland Memorial Park </th>
+  <th>Fifth Ward</th>
+  <th><a href="http://maps.apple.com/?q=29.800964,-95.333735">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.800964,-95.333735">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>14</th>
+  <th>Earl Henderson Park</th>
+  <th>Near Northside</th>
+  <th><a href="http://maps.apple.com/?q=29.79908836,-95.35083212">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.79908836,-95.35083212">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>15</th>
+  <th>Moody Park </th>
+  <th>Near Northside</th>
+  <th><a href="http://maps.apple.com/?q=29.79369,-95.3654">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.79369,-95.3654">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>16</th>
+  <th>Quitman Near Northside METRORail</th>
+  <th>Near Northside</th>
+  <th><a href="http://maps.apple.com/?q=29.780742,-95.363655">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.780742,-95.363655">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>17</th>
+  <th>Leonel Castillo Comm Center</th>
+  <th>Near Northside</th>
+  <th><a href="http://maps.apple.com/?q=29.77818,-95.36673">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.77818,-95.36673">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>18</th>
+  <th>UHD Soccer Field / White Oak Bayou Trailhead</th>
+  <th>UHD</th>
+  <th><a href="http://maps.apple.com/?q=29.76912019,-95.36069779">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76912019,-95.36069779">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>19</th>
+  <th>UHD Jesse H. Jones Student Life Center</th>
+  <th>UHD</th>
+  <th><a href="http://maps.apple.com/?q=29.76676,-95.35963">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.76676,-95.35963">Google</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr  onclick="toggleClass(this,'selected');">
+  <th>20</th>
+  <th>Fifth Ward CRC Lyons & Waco</th>
+  <th>Fifth Ward</th>
+  <th><a href="http://maps.apple.com/?q=29.776009,-95.326715">Apple</a></th>
+  <th></th>
+  <th><a href="https://www.google.com/maps/dir/?api=1&destination=29.776009,-95.326715">Google</a></th>
+</tr>
+
+             
+</table>
+</div>
+</body>
+</html>

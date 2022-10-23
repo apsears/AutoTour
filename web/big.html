@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+    .selected {
+        background-color: #6ccbfb;
+        color: #555;
+    }
+
+
+        </style>
+    </head>
+<script>
+function toggleClass(el, className) {
+    if (el.className.indexOf(className) >= 0) {
+        el.className = el.className.replace(className,"");
+    }
+    else {
+        el.className  += className;
+    }
+}
+</script>
+<body>
+<div class="imgbox">
+<img src="images/big.jpg" class="center-fit"></img>
+</div>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+<tr>
+  <th>#</th>
+  <th>Group</th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>0</th>
+  <th><a href="fifthward_northside_uhd.html">fifthward_northside_uhd</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>1</th>
+  <th><a href="rice_tmc.html">rice_tmc</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>2</th>
+  <th><a href="third_ward_tsu_uh.html">third_ward_tsu_uh</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>3</th>
+  <th><a href="downtown_eado.html">downtown_eado</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>4</th>
+  <th><a href="midtown_montrose.html">midtown_montrose</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>5</th>
+  <th><a href="heights.html">heights</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>6</th>
+  <th><a href="hermann_park_museum.html">hermann_park_museum</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>7</th>
+  <th><a href="memorial_park.html">memorial_park</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>8</th>
+  <th><a href="greater_east_end.html">greater_east_end</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>9</th>
+  <th><a href="inner_loop_sw.html">inner_loop_sw</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>10</th>
+  <th><a href="lake_houston.html">lake_houston</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>11</th>
+  <th><a href="memorial_city.html">memorial_city</a></th>
+</tr>
+
+<td bgcolor="#FFFFFF" style="line-height:10px;" colspan=3>&nbsp;</td>
+<tr onclick="toggleClass(this,'selected');">
+  <th>12</th>
+  <th><a href="washington_corridor.html">washington_corridor</a></th>
+</tr>
+
+             
+</table>
+</div>
+</body>
+</html>
